@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+
+    production: true,
+    API_BASE: 'https://api.autobots.rocks'
+    
 };
