@@ -5,17 +5,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule }            from '@angular/router';
 import { ToastrModule }            from 'ngx-toastr';
 
-import { AppComponent }    from './app.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { ModulesModule }   from './modules/modules.module';
-import { SharedModule }    from './shared/shared.module';
+import { AppComponent }      from './app.component';
+import { HomeComponent }     from './home/home.component';
+import { HeaderComponent }   from './layout/header/header.component';
+import { ModulesModule }     from './modules/modules.module';
+import { RendererComponent } from './renderer/renderer.component';
+import { SharedModule }      from './shared/shared.module';
 
 @NgModule({
 
     declarations: [
 
         AppComponent,
-        HeaderComponent
+        HeaderComponent,
+        HomeComponent,
+        RendererComponent
 
     ],
 
@@ -25,7 +29,22 @@ import { SharedModule }    from './shared/shared.module';
         BrowserAnimationsModule,
         HttpClientModule,
         ModulesModule,
-        RouterModule.forRoot([]),
+        RouterModule.forRoot([
+
+            {
+
+                path: 'page/:page',
+                component: RendererComponent
+
+            }, {
+
+                path: '',
+                pathMatch: 'full',
+                redirectTo: 'page/getting-started'
+
+            }
+
+        ]),
         SharedModule,
         ToastrModule.forRoot({
 
