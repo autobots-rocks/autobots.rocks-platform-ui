@@ -26,6 +26,35 @@
 
         .right {
 
+            display: flex;
+            align-items: center;
+
+            .links {
+
+                display: flex;
+
+                div {
+
+                    justify-content: center;
+                    align-items: center;
+
+                    color: rebeccapurple;
+                    cursor: pointer;
+                    margin: 40px;
+                    padding-right: 20px;
+                    font-size: 18px;
+                    border-right: 1px solid #333;
+
+                    &:hover {
+
+                        color: limegreen;
+
+                    }
+
+                }
+
+            }
+
             .icons {
 
                 i {
