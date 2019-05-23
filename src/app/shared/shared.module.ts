@@ -1,6 +1,7 @@
 import { CommonModule }                                  from '@angular/common';
 import { HttpClient }                                    from '@angular/common/http';
 import { NgModule }                                      from '@angular/core';
+import { MatTooltipModule }                              from '@angular/material';
 import { ClipboardModule }                               from 'ngx-clipboard';
 import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
 
@@ -48,7 +49,9 @@ export function markedOptionsFactory(): MarkedOptions {
 
             },
 
-        })
+        }),
+
+        MatTooltipModule,
 
     ],
 
@@ -56,7 +59,8 @@ export function markedOptionsFactory(): MarkedOptions {
 
         ClipboardModule,
         CommonModule,
-        MarkdownModule
+        MarkdownModule,
+        MatTooltipModule,
 
     ]
 
