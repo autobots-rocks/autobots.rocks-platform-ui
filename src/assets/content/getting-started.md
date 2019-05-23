@@ -3,6 +3,11 @@ Autobots is a bot framework designed for simplicity and has a growing ecosystem 
 
 Using modules is as easy as running `npm install <module name>` after creating a very basic entry point.
 
+## <span style="color: limegreen">00</span> Pre-requisites
+
+You need to have nodejs and access to a MySQL database. You can get free database from providers like Google Cloud Platform and AWS or
+you can install MySQL locally. To install nodejs visit https://nodejs.org.
+
 ## <span style="color: limegreen">01</span> Create a New Project
 
 Create a new project directory and run:
