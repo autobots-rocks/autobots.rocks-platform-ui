@@ -1,6 +1,9 @@
+import { HttpClientModule }        from '@angular/common/http';
 import { NgModule }                from '@angular/core';
 import { BrowserModule }           from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule }            from '@angular/router';
+import { ToastrModule }            from 'ngx-toastr';
 
 import { AppComponent }    from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -20,8 +23,20 @@ import { SharedModule }    from './shared/shared.module';
 
         BrowserModule,
         BrowserAnimationsModule,
+        HttpClientModule,
         ModulesModule,
+        RouterModule.forRoot([]),
         SharedModule,
+        ToastrModule.forRoot({
+
+            timeOut: 5000,
+            positionClass: 'toast-bottom-right',
+            preventDuplicates: true,
+            progressBar: true,
+            enableHtml: true,
+            closeButton: true
+
+        }),
 
 
     ],

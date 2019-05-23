@@ -1,0 +1,58 @@
+<div class="wrapper">
+
+    <div class="left mat-elevation-z14">
+
+
+        <div class="name">
+
+            {{ module.name }}
+
+        </div>
+
+        <div class="description">
+
+            {{ module.description }}
+
+        </div>
+
+        <div class="install"
+             ngxClipboard
+             (cbOnSuccess)="toastrService.success('copied ' + module.npmInstallCommand)"
+             [cbContent]="module.npmInstallCommand">
+
+            <div class="command">
+
+                {{ module.npmInstallCommand }}
+
+            </div>
+
+            <div class="copy">
+
+                <i class="fas fa-clipboard"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="right mat-elevation-z14">
+
+        <div class="icons">
+
+            <a [href]="module.githubUrl" target="_blank">
+
+                <i class="fab fa-github"></i>
+
+            </a>
+
+            <i ngxClipboard
+               (cbOnSuccess)="toastrService.success('copied ' + module.npmInstallCommand)"
+               [cbContent]="module.npmInstallCommand"
+               class="fas fa-clipboard"></i>
+
+        </div>
+
+    </div>
+
+</div>

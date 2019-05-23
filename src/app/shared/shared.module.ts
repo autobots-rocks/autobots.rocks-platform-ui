@@ -1,10 +1,25 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule }    from '@angular/common';
+import { NgModule }        from '@angular/core';
+import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+
+    declarations: [],
+
+    imports: [
+
+        ClipboardModule,
+        CommonModule
+
+    ],
+
+    exports: [
+
+        ClipboardModule,
+        CommonModule
+
+    ]
+    
 })
-export class SharedModule { }
+export class SharedModule {
+}
