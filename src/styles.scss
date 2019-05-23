@@ -2,44 +2,44 @@
 @import "~ngx-toastr/toastr.css";
 
 body {
-    
+
     padding: 0;
     margin: 0;
-    
+
     letter-spacing: 1px;
     font-size: 14px;
     font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif !important;
-    
+
 }
 
 * {
-    
+
     outline: none;
-    
+
 }
 
 
 markdown {
-    
+
     color: #ccc;
-    
+
     pre {
-        
+
         background: #151515 !important;
-        
+
     }
-    
+
     h2 {
-        
+
         margin-top: 30px;
         color: #999;
-        
+
     }
-    
+
 }
 
 a {
-    
+
     color: rebeccapurple;
-    
+
 }
