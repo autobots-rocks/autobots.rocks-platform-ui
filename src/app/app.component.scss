@@ -11,6 +11,18 @@
         background: url('/assets/bg-moon.jpg') no-repeat;
         background-size: cover;
         
+        .content {
+            
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100px;
+            bottom: 0;
+            
+            overflow-y: scroll;
+            
+        }
+        
     }
     
 }
