@@ -9,8 +9,8 @@ include .make/Makefile.inc
 
 NS		?= default
 VERSION ?= $(shell git rev-parse HEAD)
-APP     ?= streamnvr-platform-ui
-IMAGE   ?= registry.gitlab.com/streaming-platform/platform-services/$(APP):$(VERSION)
+APP     ?= autobots-rocks-platform-ui
+IMAGE   ?= registry.gitlab.com/autobots.rocks/$(APP):$(VERSION)
 PORT    ?= 80
 
 .PHONY: build
