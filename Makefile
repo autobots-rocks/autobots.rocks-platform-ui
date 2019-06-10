@@ -24,7 +24,7 @@ push:		; docker push $(IMAGE)
 
 kubeme:
 
-	kubectl config use-context gke_streaming-platform-production_us-central1-a_cluster-1
+	kubectl config use-context md
 
 changelog:
 

@@ -1,107 +1,107 @@
 :host {
-    
+
     .wrapper {
-        
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         background: rgba(0, 0, 0, 0.5);
-        
+
         padding: 10px 20px 0 20px;
-        
+
         .left {
-            
+
             .logo {
-                
+
                 img {
-                    
+
                     width: 200px;
-                    
+
                 }
-                
+
             }
-            
+
         }
-        
+
         .right {
-            
+
             display: flex;
             align-items: center;
-            
+
             .links {
-                
+
                 display: flex;
-                
+
                 div {
-                    
+
                     a {
-                        
+
                         text-decoration: none;
                         color: #a15afb;
                         font-size: 18px;
-                        
+
                     }
-                    
+
                     justify-content: center;
                     align-items: center;
-                    
+
                     color: #a15afb;
                     cursor: pointer;
                     margin: 40px;
                     padding-right: 20px;
                     font-size: 18px;
                     border-right: 1px solid #333;
-                    
+
                     &:hover {
-                        
+
                         color: limegreen;
-                        
+
                         span {
-                            
+
                             color: #8c4fdb;
-                            
+
                         }
-                        
+
                     }
-                    
+
                     span {
-                        
+
                         color: #999;
-                        
+
                     }
-                    
+
                 }
-                
+
             }
-            
+
             .icons {
-                
-                
+
+
                 a {
-                    
+
                     padding: 10px;
-                    
+
                 }
-                
+
                 i {
-                    
+
                     color: rebeccapurple;
                     cursor: pointer;
                     font-size: 28px;
-                    
+
                     &:hover {
-                        
+
                         color: limegreen;
-                        
+
                     }
-                    
+
                 }
-                
+
             }
-            
+
         }
-        
+
     }
-    
+
 }
