@@ -5,13 +5,15 @@ import { ClipboardModule }       from 'ngx-clipboard';
 import { SharedModule }          from '../shared/shared.module';
 import { ModuleWidgetComponent } from './module-widget/module-widget.component';
 import { ModulesComponent }      from './modules.component';
+import { ModuleViewerComponent } from './module-viewer/module-viewer.component';
 
 @NgModule({
 
     declarations: [
 
         ModulesComponent,
-        ModuleWidgetComponent
+        ModuleWidgetComponent,
+        ModuleViewerComponent
 
     ],
 
