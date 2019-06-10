@@ -1,110 +1,116 @@
 :host {
-    
+
     .wrapper {
-        
+
         display: flex;
-        
+
         margin: 20px;
-        
+
         border-left: 4px solid #008d00;
-        
+
         .left {
-            
+
             display: flex;
             flex-direction: column;
-            
+
             flex: 1;
-            
+
             width: 300px;
             height: 200px;
-            
+
             background: rgba(0, 0, 0, 0.8);
-            
+
             .name {
-                
+
                 color: #a15afb;
                 font-size: 19px;
-                
+                cursor: pointer;
                 padding: 10px;
-                
+
+                &:hover {
+
+                    color: green;
+
+                }
+
             }
-            
+
             .description {
-                
+
                 flex: 1;
-                
+
                 padding: 10px;
                 margin-bottom: 20px;
-                
+
                 color: #999;
                 font-size: 16px;
-                
+
             }
-            
+
             .install {
-                
+
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                
+
                 padding: 10px;
-                
+
                 color: #777;
-                
+
                 background: #111;
-                
+
                 cursor: pointer;
-                
+
                 &:hover {
-                    
+
                     background: #222;
                     color: rebeccapurple;
-                    
+
                 }
-                
+
             }
-            
+
         }
-        
+
         .right {
-            
+
             flex: 0 1 30px;
-            
+
             width: 30px;
             height: 75px;
-            
+
             background: rgba(0, 0, 0, 0.8);
             padding: 10px;
-            
+
             .icons {
-                
+
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                
+
                 i {
-                    
+
                     margin-bottom: 15px;
-                    
+
                     color: #666;
                     font-size: 26px;
-                    
+
                     cursor: pointer;
-                    
+
                     &:hover {
-                        
+
                         background: #222;
                         color: limegreen;
-                        
+
                     }
-                    
+
                 }
-                
+
             }
-            
+
         }
-        
+
     }
-    
+
 }
